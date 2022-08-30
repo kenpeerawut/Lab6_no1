@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+     function add() {
+        var box1 = document.getElementsByName("box1")[0].value;
+        var box2 = document.getElementsByName("box2")[0].value;
+        var result = Number(box1) + Number(box2);
+        document.getElementsByName("result")[0].value = result;
+    }
+
+</script>
+
+<body>
+    
+ <form>
+    <input type="text" id="box1" size="5">
+    <label for="fname">+</label>
+    <input type="text" id="box2" size="5">
+    <label for="fname">=</label>
+    <input type="text" id="box3" size="5">
+    <input type="button" onclick="add()" value="Go Go">
+ </form>
+    
+</body>
+</html>
